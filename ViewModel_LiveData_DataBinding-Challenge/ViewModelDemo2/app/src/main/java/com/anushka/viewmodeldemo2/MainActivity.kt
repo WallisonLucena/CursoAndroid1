@@ -20,8 +20,5 @@ class MainActivity : AppCompatActivity() {
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
-        binding.insertButton.setOnClickListener {
-            viewModel.setTotal(binding.inputEditText.text.toString().toInt())
-        }
     }
 }

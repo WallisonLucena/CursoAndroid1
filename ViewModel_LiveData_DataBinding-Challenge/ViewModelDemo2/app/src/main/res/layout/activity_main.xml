@@ -19,8 +19,8 @@
             android:id="@+id/input_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="number"
+            android:text="@={viewModel.inputText}"
             android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +36,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="40dp"
             android:text="Add"
+            android:onClick="@{()-> viewModel.setTotal()}"
             android:textSize="36sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_edit_text" />
