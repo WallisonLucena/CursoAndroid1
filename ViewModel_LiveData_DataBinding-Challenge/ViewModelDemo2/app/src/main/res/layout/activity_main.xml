@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.anushka.viewmodeldemo2.MainActivityViewModel" />
+
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,6 +47,7 @@
             android:layout_marginStart="45dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="41dp"
+            android:text="@{String.valueOf(viewModel.totalData)}"
             android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="@+id/insert_button"
             app:layout_constraintStart_toStartOf="parent"
